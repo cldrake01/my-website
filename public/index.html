@@ -60,7 +60,7 @@
                     <strong>Detailed:</strong>
                     <p></p>
                     <span>
-                        I used Alpaca’s API to gather eight years of time series data, to which I applied technical and simple indicators. I then had to clean my data, as not every stock had been on the market for eight years. Which I achieved by appending tensors of zeros to the rear of my rank-two tensors (the enclosing tensor was rank-three), which meant that any days during which it wasn’t publicly listed would be ignored. Which meant that my LSTM could take a time series of any length as input and produce a reliable prediction.
+                        I used Alpaca’s API to gather eight years of time series data, to which I applied technical and simple indicators. I then had to clean my data, as not every stock had been on the market for eight years. Which I achieved by prepending tensors of zeros to the rear of my rank-two tensors (the enclosing tensor was rank-three), which meant that any days during which it wasn’t publicly listed would be ignored. Which meant that my LSTM could take a time series of any length as input and produce a reliable prediction.
                     </span>
                 </div>
             </div>
