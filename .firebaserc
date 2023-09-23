@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "connect-digital-inclusion-labs"
-  }
+    "default": "connect-digital-inclusion-labs",
+    "collin": "collin-drake"
+  },
+  "targets": {},
+  "etags": {}
 }
