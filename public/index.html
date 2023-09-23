@@ -29,17 +29,25 @@
                     <p></p>
                     <strong>Brief:</strong>
                     <p></p>
-                    <span>
-                        I improved our age and gender recognition model, resulting in ~91% accuracy, as opposed to our initial ~76% accuracy.
-                        I built our face reidentification system.
-                    </span>
+                    <ul>
+                        <li>
+                            I improved our age and gender recognition model, resulting in ~91% accuracy, as opposed to our initial ~76% accuracy.
+                        </li>
+                        <li>
+                            I built our face reidentification system.
+                        </li>
+                    </ul>
                     <p></p>
                     <strong>Detailed:</strong>
                     <p></p>
-                    <span>
-                        I solved the class imbalance problem within our dataset by implementing ROS and tuning various hyperparameters such as batch size and learning rate.
-                        Our neural network generates a unique vector of facial landmarks for an input face, which is then added to a quantized Faiss index, depending upon whether its similarity is above our threshold.
-                    </span>
+                    <ul>
+                        <li>
+                            I solved the class imbalance problem within our dataset by implementing ROS and tuning various hyperparameters such as batch size and learning rate.
+                        </li>
+                        <li>
+                            Our neural network generates a unique vector of facial landmarks for an input face, which is then added to a quantized Faiss index, depending upon whether its similarity is above our threshold.
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -54,13 +62,13 @@
                     <strong>Brief:</strong>
                     <p></p>
                     <span>
-                        I gathered data, cleaned the data, and my neural network made sense of it.
+                        I collected and cleaned time series data, employing a neural network to extract meaningful insights and patterns.
                     </span>
                     <p></p>
                     <strong>Detailed:</strong>
                     <p></p>
                     <span>
-                        I used Alpaca’s API to gather eight years of time series data, to which I applied technical and simple indicators. I then had to clean my data, as not every stock had been on the market for eight years. Which I achieved by prepending tensors of zeros to the rear of my rank-two tensors (the enclosing tensor was rank-three), which meant that any days during which it wasn’t publicly listed would be ignored. Which meant that my LSTM could take a time series of any length as input and produce a reliable prediction.
+                        I utilized Alpaca's API to collect eight years' worth of time series data. I then applied various technical and simple indicators to this dataset. To ensure data consistency, I performed data cleaning since not all stocks had an eight-year market history. For data cleaning, I adopted an approach where I prepended tensors of zeros to my rank-two tensors (the enclosing tensor was rank-three). This technique effectively filters out periods during which a stock wasn't publicly listed. The LSTM model I developed is capable of processing time series data of variable lengths and consistently generates reliable predictions.
                     </span>
                 </div>
             </div>
@@ -84,7 +92,9 @@
                     <strong>TensorFlow</strong>
                     <p></p>
                     <ul>
-                        <li>Pro: easy to implement on GCP and is well optimized for parallelization, I much prefer it for production</li>
+                        <li>Pro: easy to implement on GCP and is well optimized for parallelization, I much prefer it
+                            for production
+                        </li>
                     </ul>
                 </div>
                 <p></p>
@@ -95,7 +105,9 @@
                     <p></p>
                     <ul>
                         <li>Pro: simple</li>
-                        <li>Con: unreliable, as Google has a history of killing their services; I’d have some apprehensions about using some of their niche services</li>
+                        <li>Con: unreliable, as Google has a history of killing their services; I’d have some
+                            apprehensions about using some of their niche services
+                        </li>
                     </ul>
                 </div>
                 <p></p>
@@ -104,7 +116,9 @@
                     <p></p>
                     <ul>
                         <li>Pro: reliable</li>
-                        <li>Con: complicated, each service has different UI, which translates to longer onboarding times</li>
+                        <li>Con: complicated, each service has different UI, which translates to longer onboarding
+                            times
+                        </li>
                     </ul>
                 </div>
                 <p></p>
@@ -114,7 +128,9 @@
                     <strong>Golang</strong>
                     <p></p>
                     <ul>
-                        <li>Pro: simple and performant; my go-to language for a web server, most front-end engineers can understand .go files</li>
+                        <li>Pro: simple and performant; my go-to language for a web server, most front-end engineers can
+                            understand .go files
+                        </li>
                         <li>Con: some may not prefer its error handling syntax</li>
                     </ul>
                 </div>
@@ -124,7 +140,9 @@
                     <p></p>
                     <ul>
                         <li>Pro: ml tooling, there really isn’t a better language for ml</li>
-                        <li>Con: can provide too much abstraction; I wouldn’t like to use Faiss without first understanding its low-level, C++ aspects</li>
+                        <li>Con: can provide too much abstraction; I wouldn’t like to use Faiss without first
+                            understanding its low-level, C++ aspects
+                        </li>
                     </ul>
                 </div>
                 <p></p>
